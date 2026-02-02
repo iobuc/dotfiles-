@@ -68,15 +68,10 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
+# Example format: plugins=(git syntax-highlighting autosuggestions)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-	git
-	syntax-highlighting
-	autosuggestions
-	docker
-	python
-)
+
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,3 +104,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Sync Test 101
+alias python="python3"
+# 手动加载插件脚本
+source ~/.oh-my-zsh/custom/plugins/syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/autosuggestions/zsh-autosuggestions.zsh
